@@ -6,7 +6,7 @@
 
 ## Membres du groupe :
 
-Etudiant 1 (référent du groupe) :  [Laura BORNERT](mailto:laura.bornert@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
+Etudiant 1 (référente du groupe) :  [Laura BORNERT](mailto:laura.bornert@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 Etudiant 2 : [Lucas FRICHET](mailto:lucas.frichet02@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
 Etudiant 3 : [Kevin PADAYODI](mailto:kevin.padayodi@edu.univ-fcomte.fr?subject=SAE_1_05_06)  
 Etudiant 4 : [Danis HABIBOVIC](mailto:danis.habibovic@edu.univ-fcomte.fr?subject=SAE_1_05_06)   
