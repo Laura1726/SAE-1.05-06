@@ -13,7 +13,7 @@ Etudiant 4 : [Danis HABIBOVIC](mailto:danis.habibovic@edu.univ-fcomte.fr?subject
 
 # Présentation du projet
 
-Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la SAÉ 05-06 à l'IUT de Belfort-Montbéliard. Ce site présente des informations concernant l'entreprise OVHcloud et sert de vitrine pour présenter l'entreprise, ses activité, son organisation et son historique. Vous trouverez dans ce dépôt et sur le site un rapport économique analysant l'aspect économique de OVHcloud.
+Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la SAÉ 05-06 à l'IUT de Belfort-Montbéliard. Ce site présente des informations concernant l'entreprise OVHcloud et sert de vitrine pour présenter l'entreprise, ses activités, son organisation et son historique. Vous trouverez dans ce dépôt et sur le site un rapport économique analysant l'aspect économique de OVHcloud.
 
 ## Choix de conception  
 
