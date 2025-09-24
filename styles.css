@@ -16,7 +16,7 @@ header{
 nav{
     width: 100%;
     height: 70px;
-    background-color: gray;
+    background-color: #401753;
     display: flex;
     align-items: center;
     width: 100%;
@@ -35,12 +35,14 @@ nav a {
 
 .navigation a {
     padding: 10px;
+    color: white;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 .navigation a:hover {
-    background-color: aqua;
+    background-color: #FFBF00;
+    color: black;
 }
 
 .navigation{
@@ -51,12 +53,14 @@ nav a {
 }
 
 .logo>img{
-    height: 70px;
+    height: 50px;
     width: auto;
+    margin-left: 5px;
 }
 
 footer{
-    background-color: gray;
+    background-color: #401753;
+    color: white;
     text-align: center;
     padding: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -88,7 +92,7 @@ main {
 
 main h2 {
     margin-top: 20px;
-    color: #0000ff;
+    color: #743894;
 }
 
 main p {
@@ -104,7 +108,7 @@ main p {
     margin: 20px auto;
     padding: 15px 25px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #0b2d57, #2196f3);
+    background: linear-gradient(135deg, #401753, #9B65B8);
     color: white;
     box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
 }
