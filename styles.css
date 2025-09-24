@@ -72,6 +72,48 @@ footer{
     border-radius: 10px;
     box-shadow: 10px 5px 5px gray;
 }
+/* Style page Accueil */
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    margin-top: 20px;
+    color: #0b2d57;
+}
+
+main p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0b2d57, #2196f3);
+    color: white;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
 
 
 /* Style page Histoire */
