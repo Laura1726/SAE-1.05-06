@@ -17,4 +17,25 @@ Ce dépôt correspond à un site web créé en HTML/CSS/JS dans le cadre de la S
 
 ## Choix de conception  
 
-Pour la conception du site, nous nous sommes inspirés du site officiel de ***OVHcloud**** (disponible [ici](https://www.ovhcloud.com/fr/)), du site de  [Asics](https://www.asics.com/fr/fr-fr/). Nous n'avons pas repris exactement les mêmes design, mais nous nous en sommes inspiré.
+Pour la conception du site, nous nous sommes inspirés du site officiel de ***OVHcloud**** (disponible [ici](https://www.ovhcloud.com/fr/)), du site de  [Evian](https://www.evian.com/fr/), [SpaceX](https://www.spacex.com), [Formule1](https://gpcanada.ca). Nous n'avons pas repris exactement les mêmes design, mais nous nous en sommes inspiré.
+
+## Développement Site Web et Validation des pages
+
+### Page d'accueil
+
+**Auteur : Danis HABIBOVIC**  
+
+
+### Page Histoire
+
+**Auteur : Kevin PADAYODI**  
+
+
+### Page Environnement
+
+**Auteur : Laura Bornert**  
+
+
+### Page Economie (Quelques Chiffres)
+
+**Auteur : Lucas Frichet**
