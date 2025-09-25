@@ -173,3 +173,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 /* Style page Environnement */
+
+.container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+}
