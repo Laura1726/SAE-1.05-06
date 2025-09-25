@@ -69,7 +69,7 @@ footer{
 /* Style page Accueil */
 
 .slogan{
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 550px;
@@ -81,24 +81,74 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 
-main h2 {
-    margin-top: 20px;
-    color: #743894;
+/* Une rangée image/texte */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* texte / image */
+  gap: 24px;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  margin: 30px auto;     
+  max-width: 1200px;
 }
 
-.acceuil main h2 {
-  margin-top: 20px;
-  color: #0000ff;
-  text-align: center;
+/* Inversion pour alterner (image à gauche / texte à droite) */
+.row.reverse {
+  grid-template-columns: 320px 1fr; /* image / texte */
+}
+.row.reverse .text { order: 2; }
+.row.reverse .img-placeholder { order: 1; }
+
+/* Visuel “placeholder image” (comme le wireframe) */
+.img-placeholder {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 22% 22%, #fff 18px, #ccc 18px) top left/100% 100% no-repeat,
+    linear-gradient(135deg, #bbb 30%, #ddd 30%, #ddd 60%, #bbb 60%);
+  /* le pattern ci-dessus simule l’icône paysage */
+  background-color: #e5e5e5;
+  border: 6px solid #3a3a3a;
 }
 
-.acceuil main p {
-  margin: 10px 0;
-  font-size: 1rem;
+/* Zone texte */
+.text h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #000;
+}
+.text p {
+  margin: 0 0 12px;
   color: #333;
+  line-height: 1.6;
+}
+
+/* Bouton sous le texte */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid #401753;
+  color: #401753;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .15s ease, background-color .2s ease, color .2s ease;
+}
+.btn:hover {
+  background: #FFBF00;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 /* Bloc slogan */
