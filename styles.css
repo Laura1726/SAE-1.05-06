@@ -76,17 +76,11 @@ footer{
     border-radius: 10px;
     box-shadow: 10px 5px 5px gray;
 }
-/* Style page Accueil */
 
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.acceuil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -95,12 +89,19 @@ main h2 {
     color: #743894;
 }
 
-main p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #333;
+.acceuil main h2 {
+  margin-top: 20px;
+  color: #0000ff;
+  text-align: center;
 }
 
+.acceuil main p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Bloc slogan */
 .slogan {
     text-align: center;
     font-size: 1.5rem;
