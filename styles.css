@@ -117,8 +117,60 @@ main h2 {
 
 
 /* Style page Histoire */
+body.histoire .Titre {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+body.histoire .Titre h1 {
+    font-size: 2.2rem;
+    color: #401753;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body.histoire .zone-bloque {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
+body.histoire .colonne-bloque {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body.histoire .bloque-texte {
+    background: #f4f4f4;
+    padding: 15px;
+    border-left: 6px solid #743894;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+body.histoire .images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+body.histoire .paragraphes {
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 80% ;
+    background: #f9f9f9;
+    border-radius: 8px;
+    line-height: 1.6;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
 /* Style page Economie */
 
 
