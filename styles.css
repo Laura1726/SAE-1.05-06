@@ -69,7 +69,7 @@ footer{
 /* Style page Accueil */
 
 .slogan{
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 550px;
@@ -81,24 +81,64 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+
 }
 
-
-main h2 {
-    margin-top: 20px;
-    color: #743894;
+.row {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  margin: 30px auto;     
+  max-width: 1200px;
 }
 
-.acceuil main h2 {
-  margin-top: 20px;
-  color: #0000ff;
-  text-align: center;
+.row.reverse {
+  grid-template-columns: 320px 1fr;
+}
+.row.reverse .text { order: 2; }
+.row.reverse .img-placeholder { order: 1; }
+
+.img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  border: 3px solid #000;
 }
 
-.acceuil main p {
-  margin: 10px 0;
-  font-size: 1rem;
+.text h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #000;
+}
+.text p {
+  margin: 0 0 12px;
   color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid #401753;
+  color: #401753;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .15s ease, background-color .2s ease, color .2s ease;
+}
+.btn:hover {
+  background: #FFBF00;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 /* Bloc slogan */
@@ -173,5 +213,97 @@ body.histoire .paragraphes {
 }
 /* Style page Economie */
 
+.case {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  margin: 30px auto;     
+  max-width: 800px;
+}
 
 /* Style page Environnement */
+
+.containers{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container-milieu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.txt-gauche{
+    display: grid;
+    gap: 20px;
+}
+
+.txt-block{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width: 350px;
+}
+
+.image-block {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.gros-txt{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 30px 20px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre_env{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.accroche_env{
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.img_env{
+    width: 150px;
+}
