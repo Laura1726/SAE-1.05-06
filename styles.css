@@ -149,7 +149,7 @@ font-family: Arial, Helvetica, sans-serif;
   transition: transform .15s ease, background-color .2s ease, color .2s ease;
 }
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   background: #FFBF00;
   color: #000;
 }
@@ -420,7 +420,7 @@ body.histoire .paragraphes {
 }
 
 .submit-btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
