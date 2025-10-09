@@ -1,4 +1,4 @@
-/* ======================================================== Style Global =====================================================*/
+/* ======================================================== Style Global =====================================================================================================*/
 
 *
 {
@@ -429,7 +429,7 @@ body.histoire .paragraphes {
     margin: 0 auto;
 }
 
-/* ======================================================== Style page Environnement ========================================================*/
+/* ======================================================== Style page Environnement ====================================================================================*/
 
 .containers{
     max-width: 1200px;
@@ -460,6 +460,7 @@ body.histoire .paragraphes {
     justify-content: center;
     min-height: 100px;
     width: 350px;
+    font-family: "Afacad", sans-serif;
 }
 
 .image-block {
@@ -484,6 +485,7 @@ body.histoire .paragraphes {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Afacad", sans-serif;
 }
 
 .titre_env{
@@ -495,6 +497,7 @@ body.histoire .paragraphes {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .accroche_env{
@@ -506,6 +509,7 @@ body.histoire .paragraphes {
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .img_env{
