@@ -136,9 +136,9 @@ font-family: Arial, Helvetica, sans-serif;
   transition: transform .15s ease, background-color .2s ease, color .2s ease;
 }
 .btn:hover {
+    transform: scale(1.05);
   background: #FFBF00;
   color: #000;
-  transform: translateY(-1px);
 }
 
 /* Bloc slogan */
@@ -333,7 +333,7 @@ body.histoire .paragraphes {
 
 .container {
     padding: 40px;
-    border-radius: 20px;
+    border-radius: auto;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
@@ -394,7 +394,7 @@ body.histoire .paragraphes {
 
 .submit-btn {
     width: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4c0e97 0%, #764ba2 100%);
     color: white;
     padding: 15px;
     border: none;
@@ -407,7 +407,7 @@ body.histoire .paragraphes {
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
@@ -425,4 +425,44 @@ body.histoire .paragraphes {
 
 .logo_contact{
     width: 20px;
+}
+
+.social-section {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.social-links .logo_contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.social-links .logo_contact img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.social-links .logo_contact img:hover {
+  transform: scale(1.1);
+  background-color: #ececec;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }

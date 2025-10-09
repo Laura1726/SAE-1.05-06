@@ -1,89 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Contact</title>
+
+  <style>
+    
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/Logo.png">
-            </a>
-            <div class="navigation">
-                <a href="index.html">Accueil</a>
-                <a href="histoire.html">Histoire</a>
-                <a href="economie.html">Economie</a>
-                <a href="environnement.html">Environnement & Innovations</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="header">
-            <h1>Contactez-nous</h1>
-            <p>Nous serions ravis d'avoir de vos nouvelles</p>
-        </div>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/nova_noback.png.webp" alt="Logo OVH / Nova" />
+      </a>
+      <div class="navigation">
+        <a href="index.html">Accueil</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="economie.html">Economie</a>
+        <a href="environnement.html">Environnement &amp; Innovations</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-        <form id="forumlaire">
-            <div class="form-group">
-                <label for="nom">Nom complet *</label>
-                <input type="text" id="nom" name="nom" required>
-            </div>
+  <main class="acceuil">
+    <section class="container">
+      <div class="text">
+        <h1>Contactez-nous</h1>
+        <p>Une question, un projet, un partenariat&nbsp;? Écrivez-nous&nbsp;!</p>
+        
+        <form id="formulaire" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" required autocomplete="name" />
+          </div>
 
-            <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
 
-            <div class="form-group">
-                <label for="telephone">Téléphone</label>
-                <input type="tel" id="telephone" name="telephone">
-            </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel" />
+          </div>
 
-            <div class="form-group">
-                <label for="sujet">Sujet *</label>
-                <input type="text" id="sujet" name="sujet" required>
-            </div>
+          <div class="form-group">
+            <label for="sujet">Sujet *</label>
+            <input type="text" id="sujet" name="sujet" required />
+          </div>
 
-            <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
-            </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Votre message..." required rows="6"></textarea>
+          </div>
 
-            <button type="submit" class="submit-btn">Envoyer le message</button>
+          <button type="submit" class="btn submit-btn">Envoyer le message</button>
+          <p class="form-note">* Champs obligatoires</p>
         </form>
 
         <div class="social-section">
-            <h3>Suivez-nous sur les réseaux sociaux</h3>
-            <div class="social-links">
-                <a href="https://www.facebook.com/ovhcom/" target="_blank" title="Facebook" class="logo_contact">
-                    <img src="images/logo-facebook.jpg">
-                </a>
-                
-                <a href="https://x.com/OVHcloud" target="_blank" class="logo_contact" title="Twitter">
-                    <img src="images/logo_x.jpg">
-                </a>
-                
-                <a href="https://www.linkedin.com/company/ovhgroup/" target="_blank" class="logo_contact" title="LinkedIn">
-                    <img src="images/logo_linkdin.webp">
-                </a>
-                
-                <a href="https://www.youtube.com/channel/UCGl9Y5S09EX-3lLfAdWsW_A" target="_blank" class="logo_contact" title="YouTube">
-                    <img src="images/logo_youtube.jpg">
-                </a>
-                
-                <a href="https://github.com/ovh" target="_blank" class="logo_contact" title="GitHub">
-                    <img src="images/logo_github.png">
-                </a>
-            </div>
+          <h3>Suivez-nous</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/ovhcom/" target="_blank" title="Facebook" class="logo_contact" rel="noopener">
+              <img src="images/logo-facebook.jpg" alt="Facebook" />
+            </a>
+            <a href="https://x.com/OVHcloud" target="_blank" title="X (Twitter)" class="logo_contact" rel="noopener">
+              <img src="images/logo_x.jpg" alt="X (Twitter)" />
+            </a>
+            <a href="https://www.linkedin.com/company/ovhgroup/" target="_blank" title="LinkedIn" class="logo_contact" rel="noopener">
+              <img src="images/logo_linkdin.webp" alt="LinkedIn" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCGl9Y5S09EX-3lLfAdWsW_A" target="_blank" title="YouTube" class="logo_contact" rel="noopener">
+              <img src="images/logo_youtube.jpg" alt="YouTube" />
+            </a>
+            <a href="https://github.com/ovh" target="_blank" title="GitHub" class="logo_contact" rel="noopener">
+              <img src="images/logo_github.png" alt="GitHub" />
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+  </main>
 
-    
-    
+  <footer>
+    <p>&copy; Page faite par Danis Habibovic</p>
+  </footer>
 </body>
 </html>
