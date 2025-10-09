@@ -89,5 +89,16 @@
         <br>
         <p>&copy; Page faite par Laura BORNERT</p>
     </footer>
+     <script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("menu-placeholder").outerHTML = html;
+      const script = document.createElement("script");
+      script.src = "menu.js";
+      document.body.appendChild(script);
+    });
+</script>
+
 </body>
 </html>
