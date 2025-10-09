@@ -86,7 +86,27 @@
         </div>
     </div>
 
-    
+  </main>
+  <footer>
+    <a href="https://www.ovhcloud.com/fr" target="_blank">www.ovhcloud.com</a>
+        <br>
+        <br>
+        <p>&copy; Page faite par Laura BORNERT</p>
+    </footer>
+
+        <div id="menu-placeholder"></div>
+
+     <script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("menu-placeholder").outerHTML = html;
+      const script = document.createElement("script");
+      script.src = "menu.js";
+      document.body.appendChild(script);
+    });
+</script>
+
     
 </body>
 </html>
