@@ -456,19 +456,22 @@ body.histoire .paragraphes {
     gap: 20px;
 }
 
-.txt-block{
+.txt-block {
     border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     padding: 20px;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: flex-start;
+    gap: 10px;
     min-height: 100px;
     width: 350px;
     font-family: "Afacad", sans-serif;
 }
+
 
 .image-block {
     border: 2px solid white;
@@ -490,6 +493,7 @@ body.histoire .paragraphes {
     text-align: center;
     min-height: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Afacad", sans-serif;
