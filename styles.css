@@ -439,7 +439,7 @@ body.histoire .paragraphes {
 /* ======================================================== Style page Environnement ====================================================================================*/
 
 .containers{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -454,14 +454,15 @@ body.histoire .paragraphes {
 .txt-gauche{
     display: grid;
     gap: 20px;
+    padding-right: 0;
 }
 
 .txt-block {
-    border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color: white;
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -470,33 +471,32 @@ body.histoire .paragraphes {
     min-height: 100px;
     width: 350px;
     font-family: "Afacad", sans-serif;
+    position: relative;
+    cursor: default;
 }
 
 
 .image-block {
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    padding: 40px 20px;
-    text-align: center;
+    text-align:center;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
     justify-content: center;
-    font-size: 18px;
+    padding-top: 50px;
 }
 
 .gros-txt{
-    border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     padding: 30px 20px;
-    text-align: center;
+    text-align: justify;
     min-height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Afacad", sans-serif;
+    background-color: white;
 }
 
 .titre_env{
@@ -507,11 +507,10 @@ body.histoire .paragraphes {
     font-weight: bold;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
-    color: #9B65B8;
+    
 }
 
 .accroche_env{
-    border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     padding: 20px;
@@ -520,12 +519,35 @@ body.histoire .paragraphes {
     line-height: 1.8;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+
+.titre_partie{
+  color:#9B65B8;
 }
 
 .img_env{
-    width: 150px;
+    max-width:600px;
 }
 
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.txt-block:hover .collapsible-content {
+    max-height: 1000px;
+}
+
+.txt-block:hover .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.material-symbols-outlined {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
 
 /* ======================================================== Style page Contact ======================================================== */
 

@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+    <!-- Icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
 
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
@@ -41,22 +43,27 @@
             <div class="container-milieu">
                 <div class="txt-gauche">
                     <div class="txt-block">
-                        <h2>Économie circulaire et efficacité énergétique</h2>
+                        <h2 class="titre_partie">Économie circulaire et efficacité énergétique</h2>
                         <p>Les serveurs OVHcloud sont écoconçus, démontables et recyclables. 
                             Chaque composant est testé pour être réutilisé, prolongeant la durée 
                             de vie moyenne des machines et limitant la fabrication de matériel neuf. 
                             Plus de la moitié des datacenters sont installés dans d’anciennes friches 
                             industrielles réhabilitées, et l’entreprise applique des principes d’achats 
                             responsables auprès de ses fournisseurs.
-                            Pour garantir la transparence, OVHcloud publie des indicateurs annuels normalisés : 
-                            PUE pour l’efficacité énergétique, WUE pour l’utilisation de l’eau, CUE pour l’intensité 
-                            carbone, ainsi qu’un facteur d’énergie renouvelable proche de 92 %. Son outil Impact Tracker 
-                            Environnemental permet en outre aux clients de mesurer leurs émissions sur l’ensemble du cycle 
-                            de vie des serveurs.
                         </p>
+                            <div class="collapsible-content">
+                                <p>
+                                    Pour garantir la transparence, OVHcloud publie des indicateurs annuels normalisés : 
+                                    PUE pour l’efficacité énergétique, WUE pour l’utilisation de l’eau, CUE pour l’intensité 
+                                    carbone, ainsi qu’un facteur d’énergie renouvelable proche de 92 %. Son outil Impact Tracker 
+                                    Environnemental permet en outre aux clients de mesurer leurs émissions sur l’ensemble du cycle 
+                                    de vie des serveurs.
+                                </p>
+                            </div>
+                        <span class="material-symbols-outlined">arrow_downward</span>
                     </div>
                     <div class="txt-block">
-                        <h2>Engagements environnementaux</h2>
+                        <h2 class="titre_partie">Engagements environnementaux</h2>
                         <p>
                             OVHcloud s’est fixé des objectifs ambitieux : réduction de 73 % des émissions 
                             directes (scopes 1 et 2) d’ici 2030, baisse de 52 % des émissions du scope 3 par 
@@ -67,12 +74,13 @@
                     </div>
                 </div>
                 <div class="image-block">
-                    <img src="images/environnement.png.jpg" class="img_env">
+                    <img src="images/schema_pEnv.png" class="img_env">
+                    <img src="/images/scope_23.png" class="img_env">
                 </div>
             </div>
 
             <div class="gros-txt">
-                <h2>Innovation technologique</h2>
+                <h2 class="titre_partie">Innovation technologique</h2>
                 <p>
                     L’innovation est un moteur clé. Pionnier du refroidissement liquide depuis 2003, OVHcloud 
                     exploite cette technologie pour éliminer la climatisation traditionnelle, améliorer l’efficacité 
