@@ -1,125 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <!-- Police d'écriture -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward">
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Icon -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward">
-
-    <!-- css -->
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Accueil</title>
-
+  <title>Accueil</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo_Nova_sans_fond.webp" alt="Logo entreprise Nova">
-            </a>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo_Nova_sans_fond.webp" alt="Logo Nova">
+      </a>
+    </nav>
+  </header>
 
-    <!-- HERO: datacenter bleu -->
-<section class="hero hero--datacenter" aria-label="Présentation Nova">
-  
-  <div class="hero__overlay" aria-hidden="true"></div>
+  <section class="hero hero--datacenter" aria-label="Présentation Nova">
+    <img src="images/f29458c88d5c323277a69f7bc210b927.jpg" alt="Datacenter OVH" class="hero__img">
+    <div class="hero__overlay" aria-hidden="true"></div>
 
-  <div class="hero__content container">
-    <h1 class="hero__title">
-      La liberté de créer,<br> la force d’héberger.
-    </h1>
-    <p class="hero__subtitle">
-      Infrastructure européenne performante, sûre et responsable.
-    </p>
-    
-        <a href="#apres-hero" class="scroll-down" aria-label="Descendre vers le contenu">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="scroll-icon" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
+    <div class="hero__content container">
+      <h1 class="hero__title">Découvrez OVH</h1>
+      <p class="hero__subtitle">L’infrastructure européenne conçue pour héberger, protéger et faire grandir vos idées.</p>
+
+      <a href="#apres-hero" class="scroll-down" aria-label="Descendre vers le contenu">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="scroll-icon" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
-</section>
+  </section>
 
-<section class="text-loop" aria-label="Mots-clés Nova">
-  <div class="text-loop__track">
-    <span>Cloud • Performance • Sécurité • Innovation • Liberté • Hébergement •</span>
-    <span>Cloud • Performance • Sécurité • Innovation • Liberté • Hébergement •</span>
-  </div>
-</section>
+  <section class="text-loop" aria-label="Mots-clés Nova">
+    <div class="text-loop__track">
+      <span>Cloud • Performance • Sécurité • Innovation • Liberté • Hébergement •</span>
+      <span>Cloud • Performance • Sécurité • Innovation • Liberté • Hébergement •</span>
+    </div>
+  </section>
 
+  <main class="accueil acceuil">
+    <section class="row">
+      <div class="text">
+        <div id="apres-hero"></div>
+        <h2>Notre Histoire</h2>
+        <p>Née en France à la fin des années 1990, OVH s’est imposée comme un pionnier du cloud, passant d’une petite start-up à un leader technologique européen reconnu.</p>
+        <a class="btn" href="histoire.html">En savoir plus</a>
+      </div>
+      <div class="img-placeholder">
+        <img src="images/ovh-groupe--600.png" alt="Illustration Histoire OVH">
+      </div>
+    </section>
 
+    <section class="row reverse">
+      <div class="text">
+        <h2>Économie</h2>
+        <p>Avec des milliers de clients à travers le monde et un rôle moteur dans l’économie numérique, OVH soutient l’innovation et participe activement à la croissance du secteur digital.</p>
+        <a class="btn" href="economie.html">En savoir plus</a>
+      </div>
+      <div class="img-placeholder">
+        <img src="images/economie-bleue.png.webp" alt="Illustration Économie">
+      </div>
+    </section>
 
-    <main class="acceuil">
-        <section class="row">
-            <div class="text">
-                <div id="apres-hero"></div>
-                <h2>Nôtre Histoire</h2>
-                <p>Née en France à la fin des années 1990, OVH s’est imposée comme un pionnier du cloud, passant d’une petite start-up à un leader technologique européen reconnu.</p>
-                <a class="btn" href="histoire.html">En savoir plus</a>
-            </div>
-            <div class="img-placeholder">
-                <img src="images/ovh-groupe--600.png" alt="Illustration section 1">
-            </div>
-        </section>
+    <section class="row">
+      <div class="text">
+        <h2>Environnement</h2>
+        <p>Précurseur en matière de durabilité, OVH conçoit des datacenters écoresponsables et optimise sa consommation énergétique pour un cloud plus vert.</p>
+        <a class="btn" href="environnement.html">En savoir plus</a>
+      </div>
+      <div class="img-placeholder">
+        <img src="images/environnement.png.jpg" alt="Illustration Environnement">
+      </div>
+    </section>
+  </main>
 
-        <section class="row reverse">
-            <div class="text">
-                <h2>Economie</h2>
-                <p>Avec des milliers de clients à travers le monde et un rôle moteur dans l’économie numérique, OVH soutient l’innovation et participe activement à la croissance du secteur digital.</p>
-                <a class="btn" href="economie.html">En savoir plus</a>
-            </div>
-            <div class="img-placeholder">
-                <img src="images/economie-bleue.png.webp" alt="Illustration section 1">
-            </div>
-        </section>
+  <footer>
+    <a href="https://www.ovhcloud.com/fr" target="_blank" rel="noopener noreferrer">www.ovhcloud.com</a>
+    <br><br>
+    <p>&copy; Page faite par Danis HABIBOVIC</p>
+  </footer>
 
-        <section class="row">
-            <div class="text">
-                <h2>Environnement</h2>
-                <p>Précurseur en matière de durabilité, OVH conçoit des datacenters écoresponsables et optimise sa consommation énergétique pour un cloud plus vert.</p>
-                <a class="btn" href="environnement.html">En savoir plus</a>
-            </div>
-            <div class="img-placeholder">
-                <img src="images/environnement.png.jpg" alt="Illustration section 1">
-            </div>
-        </section>
+  <div id="menu-placeholder"></div>
 
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").outerHTML = html;
+        const script = document.createElement("script");
+        script.src = "menu.js";
+        document.body.appendChild(script);
+      });
+  </script>
 
-    </main>
-    <footer>
-        <a href="https://www.ovhcloud.com/fr" target="_blank">www.ovhcloud.com</a>
-        <br>
-        <br>
-        <p>&copy; Page faite par Danis HABIBOVIC</p>
-    </footer>
-
-    <div id="menu-placeholder"></div>
-
-    <script>
-  fetch("menu.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("menu-placeholder").outerHTML = html;
-      const script = document.createElement("script");
-      script.src = "menu.js";
-      document.body.appendChild(script);
-    });
-    </script>
-
-<script src="scroll.js"></script>
-
-
+  <script src="scroll.js"></script>
 </body>
 </html>
