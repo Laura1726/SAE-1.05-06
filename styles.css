@@ -335,60 +335,179 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 /* ======================================================== Style page Histoire ======================================================== */
-body.histoire .Titre {
-    text-align: center;
-    padding: 40px 20px;
-    background: white;
+.containers-histoire {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-body.histoire .Titre h1 {
-    font-size: 2.2rem;
-    color: #401753;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.container-milieu-histoire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 0px;
+  margin-bottom: 70px;
 }
 
-body.histoire .zone-bloque {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 25px;
-    padding: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+.txt-gauche-histoire {
+  display: grid;
+  gap: 20px;
+  padding-right: 0;
+}
+
+.txt-block-histoire {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  min-height: 100px;
+  width: 350px;
+  font-family: "Afacad", sans-serif;
+  position: relative;
+  cursor: default;
+}
+
+.image-block-histoire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  top: 20px;
+}
+
+.gros-txt-histoire {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  padding: 30px 20px;
+  text-align: justify;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Afacad", sans-serif;
+  background-color: white;
+  margin-top: 100px;
+}
+
+.titre_partie-histoire {
+  color: #9B65B8;
+}
+
+.titre-histoire {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.accroche-histoire {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.img-histoire {
+  width: 100%;
+}
+
+/* ---------- Frise corrigée  ---------- */
+
+.frise {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.frise::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #9B65B8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  z-index: 1;
 }
 
 
-body.histoire .colonne-bloque {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.conteneur {
+  position: relative;
+  width: 50%;
+  padding: 20px 50px;
 }
 
-body.histoire .bloque-texte {
-    background: #f4f4f4;
-    padding: 15px;
-    border-left: 6px solid #743894;
-    border-radius: 6px;
-    font-size: 1rem;
-    line-height: 1.6;
+.conteneur.droite {
+  left: 0;
+  text-align: left;
+}
+
+.conteneur.gauche {
+  left: 50%;
+  text-align: left;
+}
+
+.conteneur::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 4px solid #9B65B8;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.conteneur.gauche::before {
+  left: -14px;
+}
+
+.conteneur.droite::before {
+  right: -14px;
+}
+.contenu {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.date {
+  font-weight: bold;
+  color: #9B65B8;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.conteneur.gauche .contenu {
+  margin-left: 40px; 
+}
+
+.conteneur.droite .contenu {
+  margin-right: 40px; 
 }
 
 
-body.histoire .images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-}
-
-body.histoire .paragraphes {
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 80% ;
-    background: #f9f9f9;
-    border-radius: 8px;
-    line-height: 1.6;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
 /* ======================================================== Style page Economie ======================================================== */
 
 .case {
@@ -695,3 +814,10 @@ body.histoire .paragraphes {
   background-color: #ececec;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+
+
