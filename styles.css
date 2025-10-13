@@ -535,6 +535,7 @@ footer>a:hover{
 
 .titre_partie-histoire {
   color: #9B65B8;
+  padding-bottom: 20px;
 }
 
 .titre-histoire {
@@ -594,12 +595,12 @@ footer>a:hover{
   padding: 20px 50px;
 }
 
-.conteneur.droite {
+.conteneur.fdroite {
   left: 0;
   text-align: left;
 }
 
-.conteneur.gauche {
+.conteneur.fgauche {
   left: 50%;
   text-align: left;
 }
@@ -616,11 +617,11 @@ footer>a:hover{
   z-index: 3;
 }
 
-.conteneur.gauche::before {
+.conteneur.fgauche::before {
   left: -10px;
 }
 
-.conteneur.droite::before {
+.conteneur.fdroite::before {
   right: -10px;
 }
 .contenu {
