@@ -715,6 +715,15 @@ footer>a:hover{
   max-width: 1000px;
 }
 
+.hero__title-economie {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  font-size: 70px;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+}
+
 .case-gauche {
   display: grid;
   gap: 24px;
