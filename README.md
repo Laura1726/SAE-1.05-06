@@ -36,9 +36,9 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 Page Contact : 
 
-Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Findex.html)
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fcontact.html)
 
-![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAccueil.png)
+![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageContact.png)
 
 
 <img src="doc/EcoConcept_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
@@ -61,7 +61,7 @@ Vérification W3C : [Détail ICI]()
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fenvironnement.html)
 
-![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_pageEnvironnement.png)
+![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_page_environnemnt.png)
 
 
 <img src="doc/EcoConcept_pageEnvironnement.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
@@ -78,41 +78,6 @@ Vérification W3C : [Détail ICI]()
 
 <img src="doc/" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
-
-## Développement Site Web et Validation des pages
-
-### Page d'accueil
-
-**Auteur : Nom Prénom**  
-
-
-
-
-
-
-ou 
-
-
-
-
-![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_1_ecoconcept.png)
-
-ou 
-
-
-
-
-### Présentation générale
-
-**Auteur : Nom Prénom**  
-
-Verification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
-
-<br>
-<img src="doc/capture_1_W3C.png" width="400px" alt="capture ecran sur ecoconcept">
-
-<br>
-<img src="doc/capture_1_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
 
 ## Répartition du travail
 

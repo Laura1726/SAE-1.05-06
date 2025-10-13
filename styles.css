@@ -211,7 +211,7 @@ nav a {
 }
 
 .navigation a:hover {
-    background-color: #FFBF00;
+    background-color: #ffbf00;
     color: black;
 }
 
@@ -544,19 +544,6 @@ body.histoire .paragraphes {
   font-family: "Afacad", sans-serif;
 }
 
-.graphique{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  border: 2px dashed gray;
-  border-radius: 10px;
-  color: gray;
-  font-style: italic;  
-  margin: 0 auto;
-}
-
 .titre_economie{
   padding: 40px 20px;
   text-align: center;
@@ -579,6 +566,27 @@ body.histoire .paragraphes {
 
 .contenu_case{
   text-align: justify;
+}
+
+.chart-container-circle {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#chartType {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #401753;
+}
+
+.chart-container-line {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.choix {
+  text-align: center;
 }
 
 /* ======================================================== Style page Environnement ====================================================================================*/
