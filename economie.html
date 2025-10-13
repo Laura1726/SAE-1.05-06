@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!-- Icon -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downwardarrow_upward">
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
     <title>Économie</title>
@@ -26,10 +26,12 @@
         </nav>
     </header>
 
-    <br>
-    <div>
-        <h1 class="titre_economie">Les chiffres important d'OVHcloud</h1>
-    </div>
+    <section class="hero-histoire hero--datacenter-histoire" aria-label="Présentation Nova">
+        <img src="images/f29458c88d5c323277a69f7bc210b927.jpg" alt="Datacenter OVH" class="hero__img-histoire">
+        <div class="hero__content-histoire container-histoire">
+            <h1 class="hero__title-economie">Les chiffres importants d'OVHcloud</h1>
+        </div>
+    </section>
 
     <main class="eco">
         <div class="case"> 
@@ -40,8 +42,8 @@
                 Elle soutient donc la transformation numérique des entreprises et autres en Europe et dans le monde.
             </div>
         </div>
-        <div class="case-gauche">
-            <div class="gauche">
+        <div class="contenu-deux">
+            <div class="case-gauche">
                 <h2 class="titre_case">Les parts de marché du Cloud dans le monde en 2025</h2>
                 <div class="contenu_case_gauche">
                     Le leader incontesté du marché du cloud en 2025 est Amazon Web Services (AWS), qui détient une part de marché de 35 %.
@@ -74,13 +76,13 @@
         <div class="case">
             <h2 class="titre_case">Coût de l'endettement financier net</h2> 
             <div class="contenu_case">
-                Entre 2020 et 2024, le cout de l'endettement financier net d'OVHcloud à connu d'importantes fluctuations.
-                En 2020, le cout de l'endettement financier net était de 11,3 millions d'euros, ce qui indique un niveau d'endettement relativement modéré.
-                Concernant 2021, on remarque une forte augmentation du cout de l'endettement financier net, qui atteint 30,3 millions d'euros.
+                Entre 2020 et 2024, le coût de l'endettement financier net d'OVHcloud à connu d'importantes fluctuations.
+                En 2020, ce coût était de 11,3 millions d'euros, ce qui indique un niveau d'endettement relativement modéré.
+                Concernant 2021, on remarque une forte augmentation de ce dernier, qui atteint 30,3 millions d'euros.
                 Cette hausse significative peut être attribuée à une augmentation de l'endettement ou à une hausse des taux d'intérêt.
                 Cependant en 2022, il chute de manière significative pour atteindre 10,3 millions d'euros, soit une baisse de plus de 65 % par rapport à l'année précédente.
                 Cette diminution pourrait indiquer une amélioration de la gestion de la dette ou encore une réduction des charges d'intérêt.
-                En 2023, le cout de l'endettement financier net à rebondi à 22,1 millions d'euros, ce qui pourrait être dû à des conditions de marché moins favorables.
+                En 2023, le coût de l'endettement financier net à rebondi à 22,1 millions d'euros, ce qui pourrait être dû à des conditions de marché moins favorables.
                 Il fini en 2024 par revenir au niveau de 2021.
                 <br>
                 <br>
@@ -94,7 +96,7 @@
             <h2 class="titre_case">Résultat net d'OVHcloud</h2> 
             <div class="contenu_case">
                 Le résultat net d'OVHcloud à montré une tendance là aussi fluctuante en 2020 et 2024, avec des pertes importantes chaque année.
-                En 2020, l'entreprise à enregistré une perte net de 11,3 millions d'euros.
+                En 2020, l'entreprise à enregistré une perte nette de 11,3 millions d'euros.
                 Cependant on remarque en 2021, avec l'arrivé de la Covid-19 une diminution du résultat net avec une perte de 32,3 millions d'euros.
                 En 2022 et 2023, on remarque encore très bien les sequelles laissés par la Covid-19, témoignant les difficultés qu'a une entreprise à se relever.
                 Concernant 2024, OVHcloud revient quasiement au niveau de 2020, avec une perte de 10,3 millions d'euros.
@@ -148,6 +150,10 @@
                 </div>
             </div>
         </div>
+        <br>
+        <span id="haut_page">
+            <a href=""><span class="material-symbols-outlined">arrow_upward</span> Haut de page</a>
+        </span>
     </main>
     <br>
     <footer>
@@ -410,6 +416,35 @@
             }
         }
     };
+
+    document.querySelector('#haut_page a').addEventListener('click', function(e) {
+        e.preventDefault();
+    
+        const duration = 800;
+        const start = window.pageYOffset;
+        const startTime = performance.now();
+
+        function easeInOutCubic(t) {
+            return t < 0.5 
+                ? 4 * t * t * t 
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+    
+
+        function scroll(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easing = easeInOutCubic(progress);
+        
+            window.scrollTo(0, start * (1 - easing));
+        
+            if (progress < 1) {
+                requestAnimationFrame(scroll);
+            }
+        }
+    
+        requestAnimationFrame(scroll);
+    });
 
     new Chart(ctx5, config);
     </script>
