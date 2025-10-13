@@ -21,7 +21,7 @@ Pour la conception du site, nous nous sommes inspirés du site officiel de ***OV
 
 ## Développement Site Web et Validation des pages
 
-### Page d'accueil
+### Page d'accueil et Contact
 
 **Auteur : Danis HABIBOVIC**  
 

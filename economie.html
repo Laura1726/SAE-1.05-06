@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <!-- Police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+
+    <!-- css -->
     <link rel="stylesheet" href="styles.css">
-    <title>Economie</title>
+    <title>Économie</title>
 </head>
 <body>
     <header>
@@ -15,39 +26,48 @@
             </a>
         </nav>
     </header>
-    <div class="titre">Le coté économique d'OVHcloud</div>
     <br>
+    <div>
+        <h1 class="titre_economie">Les chiffres important d'OVHcloud</h1>
+    </div>
     <main class="eco">
-        <section class="case">
-            <h1>Quelques chiffres pour l'année 2023</h1> 
-            <div>
-                OVHcloud est une entreprise mondialement connu pour héberger des sites
-                internet, en 2023, l'entreprise réalise 897,3 M€ pour une dette de 734,9 M€.
-                Les fonds propres d'OVHcloud était de 411 M€.
-                <br>
-                Le résultat net de 2023 témoigne d'une perte d'argent, en effet celui-ci est de -40,3 M€
+        <section class="case"> 
+            <div class="eco_accroche">
+                OVHcloud est un leader européen du cloud, s'imposant comme un acteur stratégique dans l'économie numérique mondiale.
+                Elle développe un modèle économique solide et indépendant face aux géants américains du secteur.
+                La croissance d'OVHcloud repose sur une offre diversifiée de services cloud qui sont accessibles, performants mais aussi et surtout aujourd'hui respectueux de l'environnement.
+                Elle soutient donc la transformation numérique des entreprises et autres en Europe et dans le monde.
             </div>
         </section>
-        <br>
         <section class="case">
-            <h1>Quelques chiffres pour 2024</h1> 
-            <div>
-                En 2024, l'entreprise progresse et améliore son chiffre d'affaire passant à 993,1 M€,
-                en revanche la dette d'OHVcloud n'a pas diminué au contraire, elle passe à 820,5 M€.
-                Concernant les fonds propes de 2024, ceux-ci sont en baisse avec 393 M€.
+            <h2 class="titre_case">Les années fiscales d'OVHcloud</h2>
+            <div class="contenu_case">
+                Avant de parler des chiffres d'OVHcloud, il est important de savoir que les chiffres de celle-ci ne fonctionne pas sur le calendrier classique.
+                En effet, l'année fiscale d'OVHcloud commence le 1er septembre et se termine le 31 août de l'année suivante.
+                Ainsi, par exemple pour 2023, l'année fiscale a commencé le 1er septembre 2022 et s'est terminée le 31 août 2023.
                 <br>
-                Le résultat net de 2024 est beaucoup plus important que celui de 2023, en effet, il est en augmentation
-                et passe à -10,3 M€.
+                Nous allons donc parler des chiffres d'OVHcloud pour les années fiscales 2021 à 2024, soit 4 années d'évolution.
             </div>
         </section>
-        <br>
         <section class="case">
-            <h1>Visualisation graphique</h1> 
-            <div>
-                Présence à venir d'un graphique avec des courbes pour illustrer les chiffres de 2023 par rapport à 2024.
+            <h2 class="titre_case">Coût de l'endettement financier net</h2> 
+            <div class="contenu_case">
+                Entre 2021 et 2024, le coût de l'endettement financier net d'OVHcloud a connu des fluctuations relativement notables.
+                En 2021, ce coût s'élevait à 30,2 millions d'euros, reflétant une situation financière stable.
+                Cependant, en 2022, il a chuté de manière significative pour atteindre 10,5 millions d'euros, soit une baisse de plus de 65%, indiquant une amélioration de la gestion de la dette ou encore une réduction des charges d'intérêt.
+                En 2023, le coût a rebondi à 22 millions d'euros, marquant une augmentation substantielle par rapport à l'année précédente, ce qui pourrait être attribué à une augmentation de l'endettement ou à des conditions de marché moins favorables.
+                Il revient quasi au niveau de 2021 en 2024, avec un coût de 29,5 millions d'euros, cette tendance suggère un recours accru au financement externe ou une relèvement des conditions de taux sur les marchés financiers.
                 <br>
                 <br>
-                <span class="graphique">graphique à venir</span>
+                <div class="chart-container">
+                    <canvas id="financeChart"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="case">
+            <h2 class="titre_case">Résultat net d'OVHcloud</h2> 
+            <div class="contenu_case">
+                ...
             </div>
         </section>
     </main>
@@ -62,15 +82,59 @@
         <div id="menu-placeholder"></div>
 
      <script>
-  fetch("menu.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("menu-placeholder").outerHTML = html;
-      const script = document.createElement("script");
-      script.src = "menu.js";
-      document.body.appendChild(script);
-    });
-</script>
+        fetch("menu.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("menu-placeholder").outerHTML = html;
+            const script = document.createElement("script");
+            script.src = "menu.js";
+            document.body.appendChild(script);
+        });
 
+        const ctx = document.getElementById('financeChart').getContext('2d');
+        const financeChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2021', '2022', '2023', '2024'],
+            datasets: [{
+                label: "En milliers d'euros",
+                data: [30200, 10500, 22000, 29500],
+                borderColor: 'green',
+                borderWidth: 2,
+                backgroundColor: 'rgba(0, 128, 0, 0.1)',
+                tension: 0.3,
+                pointBackgroundColor: 'green',
+                pointBorderColor: 'black',
+                pointRadius: 6,
+                pointHoverRadius: 8,
+                pointStyle: 'rectRot',
+                borderDash: [8, 5]
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => ctx.raw + " €"
+                    }
+                },
+            title: {
+                display: false
+            }
+             },
+            scales: {
+                x: {
+                    title: { display: true, text: "Année" }
+                },
+                y: {
+                    title: { display: true, text: "En milliers d'euros" },
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+    </script>
 </body>
 </html>
