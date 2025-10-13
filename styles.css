@@ -724,17 +724,6 @@ footer>a:hover{
   font-family: "Poppins", sans-serif;
 }
 
-.case-gauche {
-  display: grid;
-  gap: 24px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.236);
-  margin: 30px auto;
-  max-width: 450px;
-}
-
 .eco {
   font-family: "Afacad", sans-serif;
 }
@@ -780,12 +769,6 @@ footer>a:hover{
   margin: 0 auto;
 }
 
-.chart-container-circle {
-  max-width: 500px;
-  margin: 30px auto;
-  display: flex;
-}
-
 .choix {
   text-align: right;
 }
@@ -795,9 +778,38 @@ footer>a:hover{
   max-width: 450px;
 }
 
-.contenu-deux{
+.contenu-deux {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 30px;
+  z-index: 1;
+}
+
+
+.case-gauche {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.236);
+  z-index: 1;
+  position: relative;
+  max-width: 450px;
+}
+
+.chart-container-circle {
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+  left: 50px;
 }
 
 /* ======================================================== Style page Environnement ====================================================================================*/
