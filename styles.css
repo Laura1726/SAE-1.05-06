@@ -488,7 +488,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .txt-gauche-histoire {
   display: grid;
-  gap: 20px;
+
   padding-right: 0;
 }
 
@@ -530,7 +530,7 @@ font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   font-family: "Afacad", sans-serif;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .titre_partie-histoire {
@@ -540,7 +540,7 @@ font-family: Arial, Helvetica, sans-serif;
 .titre-histoire {
   padding: 40px 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -559,10 +559,13 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-histoire {
-  width: 100%;
+  width: 460px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+    border-radius: 10px;
 }
 
-/* ---------- Frise corrigée  ---------- */
+/* ---------- Frise ---------- */
 
 .frise {
   position: relative;
@@ -627,13 +630,16 @@ font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
+  font-size: 20px;
+  font-family: "Afacad", sans-serif;
 }
 
 .date {
   font-weight: bold;
   color: #9B65B8;
   margin-bottom: 5px;
-  font-size: 1.1rem;
+  font-size: 24px;
+  font-family: "Afacad", sans-serif;
 }
 
 .conteneur.gauche .contenu {
