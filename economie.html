@@ -135,17 +135,16 @@
         <section class="case">
             <h2 class="titre_case">Résultat opérationnel d'OVHcloud avec le C.A.</h2>
             <div class="contenu_case">
-                test
+                Pour rappel le résultat opérationnel se calcule en faisant la différence entre les produits d'exploitation (chiffre d'affaires + produits ne relevant pas de l'activité propre de l'entreprise, comme les subventions) et les charges d'exploitation.
+                N'ayant pas de chiffres sur les coûts d'exploitation, nous remarquons quand même le coût élévée de ceux-ci.
+                Le résultat opérationnel d'OVHcloud, bien que positif en 2020 avec 30,6 millions d'euros, a connu une baisse significative en 2021, chutant à seulement 6,5 millions d'euros.
+                C'est en 2022 que l'entreprise a fait face à un défi majeur, enregistrant une perte opérationnelle de 20,5 millions d'euros, ce qui reflète des difficultés opérationnelles ou des investissements importants.
+                Là aussi, les effets de la pandémie de Covid-19 se font ressentir.
+                En 2023, OVHcloud a réussi à réduire ses pertes opérationnelles à 12 millions d'euros, indiquant des efforts pour stabiliser ses opérations.
+                En 2024, l'entreprise a rebondi avec un résultat opérationnel positif de 25,7 millions d'euros, une première après 2 années dans le négatif.
+                Cette évolution du résultat opérationnel, combinée à la croissance constante du chiffre d'affaires, met en lumière la résilience et la capacité d'adaptation d'OVHcloud dans un environnement commercial dynamique et compétitif.
                 <div id="chartContainer">
                     <canvas id="ovhChart"></canvas>
-                    <br>
-                    <div class="choix">
-                        <label for="chartType">Type de graphique :</label>
-                        <select id="chartType">
-                            <option value="bar">Colonnes</option>
-                            <option value="line">Courbes</option>
-                        </select>
-                    </div>
                 </div>
             </div>
         </section>
@@ -158,7 +157,7 @@
         <p>&copy; Page faite par Lucas FRICHET</p>
     </footer>
 
-        <div id="menu-placeholder"></div>
+    <div id="menu-placeholder"></div>
 
      <script>
         fetch("menu.html")
@@ -217,15 +216,15 @@
 
     const ctx2 = document.getElementById('cloudMarketShare').getContext('2d');
     const data = {
-        labels: ['AWS', 'Microsoft Azure', 'Google Cloud', 'OVHcloud', 'Autres'],
+        labels: ['AWS ', 'Microsoft Azure ', 'Google Cloud ', 'OVHcloud ', 'Autres (Oracle, IBM, Alibaba, ...) '],
         datasets: [{
             data: [35, 27, 15, 3, 20],
             backgroundColor: [
-                '#FF9900', // AWS orange
-                '#0078D4', // Azure bleu
-                '#00A859', // Google vert
-                '#743894', // OVHcloud violet
-                '#CCCCCC'  // Autres gris
+                '#FF9900', // AWS en orange
+                '#0078D4', // Azure en bleu
+                '#00A859', // Google en vert
+                '#743894', // OVHcloud en violet
+                '#CCCCCC'  // Autres en gris
             ],
             hoverOffset: 10
         }]
