@@ -651,15 +651,14 @@ footer>a:hover{
   max-width: 1000px;
 }
 
-.gauche {
+.case-gauche {
   display: grid;
   gap: 24px;
-  align-items: center;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.236);
-  margin: 30px auto;     
+  margin: 30px auto;
   max-width: 450px;
 }
 
@@ -710,9 +709,8 @@ footer>a:hover{
 
 .chart-container-circle {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .choix {
@@ -722,12 +720,11 @@ footer>a:hover{
   display: flex;
   text-align: justify;
   max-width: 450px;
-  margin: 0 auto;
-  flex-wrap: wrap;
 }
 
-.case-gauche{
+.deux-cotes{
   display: flex;
+  justify-content: center;
 }
 
 /* ======================================================== Style page Environnement ====================================================================================*/
