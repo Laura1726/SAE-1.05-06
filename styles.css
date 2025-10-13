@@ -46,54 +46,42 @@ body{
 .stg-burger{
   position: relative;
   width: 26px;
-  height: 2px;                 
+  height: 2px;
   background: #FFBF00;
   border-radius: 2px;
   display: block;
-  transition: background .2s ease ;
-  
+  transition: background .2s ease;
 }
-
 
 .stg-burger::before,
 .stg-burger::after{
   content: "";
   position: absolute;
   left: 0;
-  top: 20%;                    
+  top: 20%;
   width: 26px;
   height: 2px;
   background: #FFBF00;
   border-radius: 2px;
-  transform-origin: center;   
+  transform-origin: center;
   transition: transform .3s ease, opacity .2s ease;
 }
-
 
 .stg-burger::before{ transform: translateY(-8px); }
 .stg-burger::after { transform: translateY( 8px); }
 
-
-.stg-trigger[aria-expanded="true"] .stg-burger{
-  background: transparent;     
-}
-.stg-trigger[aria-expanded="true"] .stg-burger::before{
-  transform: translateY(0) rotate(45deg);
-}
-.stg-trigger[aria-expanded="true"] .stg-burger::after{
-  transform: translateY(0) rotate(-45deg);
-}
-
-
+.stg-trigger[aria-expanded="true"] .stg-burger{ background: transparent; }
+.stg-trigger[aria-expanded="true"] .stg-burger::before{ transform: translateY(0) rotate(45deg); }
+.stg-trigger[aria-expanded="true"] .stg-burger::after { transform: translateY(0) rotate(-45deg); }
 
 .stg-panel {
   position: fixed;
   inset: 0 auto 0 0;
-  width: var(--menu-w);
+  width: 300px;
   height: 100dvh;
   background: linear-gradient(180deg, var(--bg2), var(--bg));
   color: var(--txt);
-  padding: 90px 20px 24px;
+  padding: 91px 24px 32px;
   transform: translateX(-100%);
   opacity: 0;
   pointer-events: none;
@@ -101,7 +89,7 @@ body{
   z-index: 10000;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
   border-radius: 0 18px 18px 0;
   overflow-y: auto;
 }
@@ -111,7 +99,6 @@ body{
   opacity: 1;
   pointer-events: auto;
 }
-
 
 .stg-item {
   list-style: none;
@@ -126,35 +113,34 @@ body{
   transform: translateX(0);
 }
 
-
 .stg-link {
   display: block;
-  padding: 12px 14px;
-  border-radius: 10px;
+  padding: 29px 10px;
   text-decoration: none;
   color: var(--txt);
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(4px);
-  outline: none;
-  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  background: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  transform: none;
+  transition: color .25s ease, opacity .25s ease, transform .18s ease;
+  will-change: transform;
+  font-family: "Afacad", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.05;
 }
 
-
-.stg-link:hover {
-  background: #FFBF00;           
-  color: #2b0a6e;                
-  transform: scale(1.1);
-}
-
-
+.stg-link:hover,
 .stg-link:focus-visible {
-  background: #FFBF00;
-  color: #2b0a6e;
-  transform: scale(1.05);
+  color: #FFBF00;
+  opacity: 1;
+  transform: scale(1.08);
 }
 
+.stg-link:active {
+  transform: scale(0.98);
+}
 
 
 .stg-overlay {
@@ -172,11 +158,8 @@ body{
   pointer-events: auto;
 }
 
-
 @media (max-width: 420px) {
-  :root {
-    --menu-w: 86vw;
-  }
+  :root { --menu-w: 86vw; }
 }
 
   

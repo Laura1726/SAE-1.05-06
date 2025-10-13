@@ -1,22 +1,33 @@
 (function () {
-  const btn = document.getElementById('stgToggle');
-  const panel = document.getElementById('stgPanel');
+  const toggle  = document.getElementById('stgToggle');
+  const panel   = document.getElementById('stgPanel');
   const overlay = document.getElementById('stgOverlay');
+  const links   = panel.querySelectorAll('.stg-link');
 
-  function openMenu(state) {
-    const open = state ?? !panel.classList.contains('open');
-    panel.classList.toggle('open', open);
-    overlay.classList.toggle('show', open);
-    btn.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  }
+  const open = () => {
+    panel.classList.add('open');
+    overlay.classList.add('show');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
 
-  btn.addEventListener('click', () => openMenu());
-  overlay.addEventListener('click', () => openMenu(false));
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') openMenu(false);
+  const close = () => {
+    panel.classList.remove('open');
+    overlay.classList.remove('show');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    expanded ? close() : open();
   });
-  panel.addEventListener('click', (e) => {
-    if (e.target.matches('.stg-link')) openMenu(false);
+
+  overlay.addEventListener('click', close);
+
+  panel.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
   });
+
+  links.forEach(a => a.addEventListener('click', close));
 })();
