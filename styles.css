@@ -634,6 +634,18 @@ footer>a:hover{
   max-width: 1000px;
 }
 
+.gauche {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.236);
+  margin: 30px auto;     
+  max-width: 450px;
+}
+
 .eco {
   font-family: "Afacad", sans-serif;
 }
@@ -679,8 +691,26 @@ footer>a:hover{
   margin: 0 auto;
 }
 
+.chart-container-circle {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .choix {
   text-align: right;
+}
+.contenu_case_gauche{
+  display: flex;
+  text-align: justify;
+  max-width: 450px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.case-gauche{
+  display: flex;
 }
 
 /* ======================================================== Style page Environnement ====================================================================================*/
