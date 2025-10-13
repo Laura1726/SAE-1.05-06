@@ -23,57 +23,61 @@ Pour la conception du site, nous nous sommes inspirés du site officiel de ***OV
 
 ### Page d'accueil et Contact
 
-**Auteur : Danis HABIBOVIC**  
+**Auteur : Danis HABIBOVIC** 
 
+Page Accueil : 
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Findex.html)
+
+![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAccueil.png)
+
+
+<img src="doc/EcoConcept_pageAccueil.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+
+Page Contact : 
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fcontact.html)
+
+![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageContact.png)
+
+
+<img src="doc/EcoConcept_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 ### Page Histoire
 
 **Auteur : Kevin PADAYODI**  
 
+Vérification W3C : [Détail ICI]()
 
-### Page Environnement
+![capture d'écran de la conformité de la page histoire]()
+
+
+<img src="doc/" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+
+
+### Page Environnement && Innovations
 
 **Auteur : Laura Bornert**  
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fenvironnement.html)
+
+![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_page_environnemnt.png)
+
+
+<img src="doc/EcoConcept_pageEnvironnement.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 
 ### Page Economie (Quelques Chiffres)
 
-**Auteur : Lucas Frichet**
+**Auteur : Lucas Frichet** 
 
-## Développement Site Web et Validation des pages
+Vérification W3C : [Détail ICI]()
 
-### Page d'accueil
-
-**Auteur : Nom Prénom**  
-
-Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
+![capture d'écran de la conformité de la page Economie](doc/)
 
 
-![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
+<img src="doc/" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
-ou 
-
-<img src="doc/capture_1_W3C.png" style="width=400px" alt="capture ecran sur w3c">
-
-
-![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_1_ecoconcept.png)
-
-ou 
-
-<img src="doc/capture_1_ecoconcept.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
-
-
-### Présentation générale
-
-**Auteur : Nom Prénom**  
-
-Verification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
-
-<br>
-<img src="doc/capture_1_W3C.png" width="400px" alt="capture ecran sur ecoconcept">
-
-<br>
-<img src="doc/capture_1_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
 
 ## Répartition du travail
 
