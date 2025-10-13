@@ -26,10 +26,12 @@
             </a>
         </nav>
     </header>
+
     <br>
     <div>
         <h1 class="titre_economie">Les chiffres important d'OVHcloud</h1>
     </div>
+
     <main class="eco">
         <section class="case"> 
             <div class="eco_accroche">
@@ -39,6 +41,25 @@
                 Elle soutient donc la transformation numérique des entreprises et autres en Europe et dans le monde.
             </div>
         </section>
+
+        <section class="case">
+            <h2 class="titre_case">Les parts de marché du Cloud dans le monde en 2025</h2>
+            <div class="contenu_case">
+                Le leader incontesté du marché du cloud en 2025 est Amazon Web Services (AWS), qui détient une part de marché de 35 %.
+                Cette dominance s'explique par la large gamme de services proposés par AWS et sa présence mondiale.
+                Microsoft Azure suit de près avec une part de marché de 27 %, bénéficiant de son intégration avec les produits Microsoft (Office 365, ...) et sur l'adoption croissante du cloud hybrid par les entreprises.
+                Quant à Google Cloud, il continue de progresser avec une part de marché de 15 %, soutenu par ses capacités en intelligence artificielle et en analyse de données. Ce qui permet d'attirer les grandes entreprises et les startups technologiques.
+                <br>
+                Face aux géants américains, OVHcloud, avec 3% de parts de marché, se positionne comme un acteur européen stratégique.
+                On remarque donc une forte domination américaine sur le domaine, mais l'arrivée d'OVHcloud traduit une volonté croissante de diversification et de souverainté numérique, notammennt  en Europe.
+                <br>
+                <br>
+                <div class="chart-container-circle">
+                     <canvas id="cloudMarketShare"></canvas>
+                </div>
+            </div>
+        </section>
+
         <section class="case">
             <h2 class="titre_case">Les années fiscales d'OVHcloud</h2>
             <div class="contenu_case">
@@ -49,6 +70,7 @@
                 Nous allons donc parler des chiffres d'OVHcloud pour les années fiscales 2021 à 2024, soit 4 années d'évolution.
             </div>
         </section>
+
         <section class="case">
             <h2 class="titre_case">Coût de l'endettement financier net</h2> 
             <div class="contenu_case">
@@ -59,15 +81,50 @@
                 Il revient quasi au niveau de 2021 en 2024, avec un coût de 29,5 millions d'euros, cette tendance suggère un recours accru au financement externe ou une relèvement des conditions de taux sur les marchés financiers.
                 <br>
                 <br>
-                <div class="chart-container">
+                <div class="chart-container-line">
                     <canvas id="financeChart"></canvas>
                 </div>
             </div>
         </section>
+
         <section class="case">
             <h2 class="titre_case">Résultat net d'OVHcloud</h2> 
             <div class="contenu_case">
-                ...
+                Le résultat net d'OVHcloud a montré une tendance fluctuante entre 2021 et 2024, avec des pertes importantes chaque année.
+                En 2021, l'entreprise a enregistré une perte nette de 32 millions d'euros, ce qui indique des défis financiers significatifs.
+                En 2022, la perte nette s'est légèrement améliorée pour atteindre 28 millions d'euros, suggérant une certaine stabilisation malgré les difficultés.
+                Cependant, l'année 2023 n'a pas suivi cette tendance positive, avec une augmentation de la perte nette à 40 millions d'euros, reflétant peut-être des investissements accrus ou des coûts opérationnels élevés.
+                Mais pour 2024, OVHcloud a réussi à réduire considérablement sa perte nette à 10 millions d'euros, ce qui pourrait indiquer une amélioration de la rentabilité ou une meilleure gestion des coûts.
+                <br>
+                <br>
+                <div id="chart-container-line">
+                    <canvas id="resultatNetChart"></canvas>
+                    <br>
+                    <div class="choix">
+                        <label for="chartType">Type de graphique :</label>
+                        <select id="chartType">
+                            <option value="bar">Colonnes</option>
+                            <option value="line">Courbe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case">
+            <h2 class="titre_case">Évolution du chiffre d'affaires</h2> 
+            <div class="contenu_case">
+                Le chiffre d'affaires d'OVHcloud a montré une croissance constante et significative entre 2021 et 2024.
+                En 2021, l'entreprise a généré un chiffre d'affaires de 660 millions d'euros, établissant une base solide pour les années suivantes.
+                En 2022, ce chiffre a augmenté de manière substantielle pour atteindre 790 millions d'euros, soit une croissance de près de 20%, reflétant une expansion rapide des activités et une demande accrue pour les services cloud.
+                L'année 2023 a poursuivi cette tendance positive avec un chiffre d'affaires de 900 millions d'euros, marquant une nouvelle augmentation de plus de 13%, ce qui souligne la capacité d'OVHcloud à capitaliser sur les opportunités du marché.
+                En 2024, le chiffre d'affaires a atteint près de 995 millions d'euros, approchant le cap du milliard d'euros, ce qui représente une croissance impressionnante de plus de 10% par rapport à l'année précédente.
+                Cette progression continue du chiffre d'affaires illustre la réussite stratégique d'OVHcloud dans un secteur qui se veut hautement compétitif.
+                <br>
+                <br>
+                <div class="chart-container-line">
+                    <canvas id="caChart"></canvas>
+                </div>
             </div>
         </section>
     </main>
@@ -99,12 +156,12 @@
             datasets: [{
                 label: "En milliers d'euros",
                 data: [30200, 10500, 22000, 29500],
-                borderColor: 'green',
+                borderColor: '#9B65B8',
                 borderWidth: 2,
                 backgroundColor: 'rgba(0, 128, 0, 0.1)',
                 tension: 0.3,
-                pointBackgroundColor: 'green',
-                pointBorderColor: 'black',
+                pointBackgroundColor: '#9B65B8',
+                pointBorderColor: '#401753',
                 pointRadius: 6,
                 pointHoverRadius: 8,
                 pointStyle: 'rectRot',
@@ -131,6 +188,143 @@
                 y: {
                     title: { display: true, text: "En milliers d'euros" },
                     beginAtZero: false
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('cloudMarketShare').getContext('2d');
+    const data = {
+        labels: ['AWS', 'Microsoft Azure', 'Google Cloud', 'OVHcloud', 'Autres'],
+        datasets: [{
+            data: [35, 27, 15, 3, 20],
+            backgroundColor: [
+                '#FF9900', // AWS orange
+                '#0078D4', // Azure bleu
+                '#00A859', // Google vert
+                '#743894', // OVHcloud violet
+                '#CCCCCC'  // Autres gris
+            ],
+            hoverOffset: 10
+        }]
+    };
+
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: (ctx2) => `${ctx2.label}: ${ctx2.formattedValue} %`
+                    }
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    };
+
+    new Chart(ctx2, config);
+
+    const ctx3 = document.getElementById('resultatNetChart').getContext('2d');
+    const labels3 = ['2021', '2022', '2023', '2024'];
+    const values3 = [-32000, -28000, -40000, -10000];
+
+    function getDataset(type) {
+        if (type === 'line') {
+            return [{
+                label: 'Résultat net (en milliers d’euros)',
+                data: values3,
+                borderColor: '#FFBF00',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.3,
+                pointRadius: 5,
+                pointBackgroundColor: '#FFBF00'
+            }];
+        } else {
+            return [{
+                label: 'Résultat net (en milliers d’euros)',
+                data: values3,
+                backgroundColor: 'rgba(255, 191, 0, 0.7)',
+                borderColor: '#FFBF00',
+                borderWidth: 2
+            }];
+        }
+    }
+
+    let chartType = 'bar';
+    let chart = new Chart(ctx3, {
+        type: chartType,
+        data: { labels: labels3, datasets: getDataset(chartType) },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'En milliers d’euros' }
+                },
+                x: {
+                    title: { display: true, text: 'Année' }
+                }
+            }
+        }
+    });
+
+    document.getElementById('chartType').addEventListener('change', function() {
+        const newType = this.value;
+        chart.destroy();
+        chart = new Chart(ctx3, {
+            type: newType,
+            data: { labels: labels3, datasets: getDataset(newType) },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'En milliers d’euros' }
+                    },
+                    x: {
+                        title: { display: true, text: 'Année' }
+                    }
+                }
+            }
+        });
+    });
+
+    const ctx4 = document.getElementById('caChart').getContext('2d');
+    const labels4 = ['2021', '2022', '2023', '2024'];
+    const values4 = [660000, 790000, 900000, 995000];
+
+    new Chart(ctx4, {
+        type: 'line',
+        data: {
+            labels: labels4,
+            datasets: [{
+                label: "Chiffre d'affaires (en milliers d’euros)",
+                data: values4,
+                borderColor: '#743894',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.3,
+                pointRadius: 5,
+                pointBackgroundColor: '#9B65B8',
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    title: {
+                        display: true,
+                        text: "En milliers d’euros"
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: "Année"
+                    }
                 }
             }
         }
