@@ -23,7 +23,7 @@ body{
 
 .stg-trigger {
   position: fixed;
-  top: 18px;
+  top: 13px;
   left: 18px;
   width: 48px;
   height: 48px;
@@ -245,65 +245,50 @@ footer>a:hover{
     text-decoration: underline;
 }
 
-/* ======================================================== Style page Accueil ========================================================*/
+/* ======================================================== Style page Accueil ======================================================== */
 
-/* ===== HERO DATACENTER ===== */
-/* ===== HERO DATACENTER (version épurée) ===== */
+/* ===== HERO ===== */
 .hero {
   position: relative;
   min-height: 75vh;
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: linear-gradient(
-  135deg,
-  #401753 0%,
-  #4a1c80 40%,
-  #2e014f 100%
-);
-
 }
 
-/* Image plein écran */
 .hero__img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 45%;
-  z-index: -1;
-  transform: scale(1.03);
-  opacity: 0.8; /* légère transparence pour mieux faire ressortir le texte */
+  object-position: center;
+  z-index: -2;
+  transform: scale(1.02);
 }
 
-/* Plus d'overlay ni de carré */
-.hero__overlay {
-  display: none;
-}
-
-/* Contenu centré */
 .hero__content {
   text-align: center;
   color: #ffffff;
   z-index: 1;
   padding: 0 40px;
-  background: none;
-  backdrop-filter: none;
+  background: none ;
+  background-color: transparent ;
+  backdrop-filter: none ;
+  box-shadow: none !important;
+  position: relative;
 }
 
-/* Titre */
 .hero__title {
   margin: 0 0 3rem;
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 1.1;
-  font-size: 3.2rem;
+  font-size: 7rem;
   text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
   font-family: "Afacad";
 }
 
-/* Sous-titre */
 .hero__subtitle {
   margin: 0 0 2rem;
   color: #dce1ff;
@@ -312,51 +297,43 @@ footer>a:hover{
   font-family: "Poppins";
 }
 
-/* Animation d'arrivée douce */
 .hero--datacenter .hero__content {
   animation: heroFadeIn 0.8s ease-out both;
 }
 
 @keyframes heroFadeIn {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 /* ===== FLECHE SCROLL ===== */
 .scroll-down{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  color:#fff;
-  margin-top:40px;
-  text-decoration:none;
-  opacity:.9;
-  transition:opacity .2s ease, transform .2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  transition: transform .2s ease, background-color .2s ease, opacity .2s ease;
+  opacity: .95;
 }
 
 .scroll-down:hover{
-  opacity:1;
+  background: rgba(255,255,255,.08);
   transform: translateY(3px);
+  opacity: 1;
 }
 
 .scroll-icon{
+  width: 26px;
+  height: 26px;
   animation: bounce 1.8s infinite ease-in-out;
 }
 
-@keyframes bounce{
-  0%,20%,50%,80%,100% { transform: translateY(0); }
-  40% { transform: translateY(6px); }
-  60% { transform: translateY(3px); }
-}
-
-/* IMPORTANT: si tu as un header sticky, l’ancre s’aligne bien */
-#apres-hero{ scroll-margin-top: 80px; }
+#apres-hero { scroll-margin-top: 80px; }
 
 /* ===== TEXTE QUI DÉFILE EN BOUCLE ===== */
 .text-loop {
@@ -400,12 +377,12 @@ footer>a:hover{
   pointer-events: none;
 }
 
+/* ===== SECTIONS CONTENU ===== */
 .acceuil {
   display: flex;
   flex-direction: column;
   align-items: center;
-font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .row {
@@ -417,13 +394,11 @@ font-family: Arial, Helvetica, sans-serif;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  margin: 30px auto;     
+  margin: 30px auto;
   max-width: 1200px;
 }
 
-.row.reverse {
-  grid-template-columns: 320px 1fr;
-}
+.row.reverse { grid-template-columns: 320px 1fr; }
 .row.reverse .text { order: 2; }
 .row.reverse .img-placeholder { order: 1; }
 
@@ -436,21 +411,20 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .text h2 {
-  margin-top: -10px; /* remonte légèrement le titre */
-  margin-bottom: 30px; /* espace plus large sous le titre */
+  margin-top: -10px;
+  margin-bottom: 30px;
   font-size: 4rem;
   color: #000;
   font-family: "Afacad", sans-serif;
 }
 
 .text p {
-  margin: 0 0 35px; /* crée un équilibre entre le h2 et le bouton */
+  margin: 0 0 35px;
   color: #333;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
-  max-width: 700px; /* optionnel : pour un meilleur alignement visuel */
+  max-width: 700px;
 }
-
 
 .btn {
   display: inline-block;
@@ -463,6 +437,7 @@ font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   transition: transform .15s ease, background-color .2s ease, color .2s ease;
 }
+
 .btn:hover {
   transform: scale(1.13);
   background: #FFBF00;
