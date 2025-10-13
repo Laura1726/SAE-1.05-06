@@ -618,11 +618,11 @@ footer>a:hover{
 }
 
 .conteneur.fgauche::before {
-  left: -10px;
+  left: -11px;
 }
 
 .conteneur.fdroite::before {
-  right: -10px;
+  right: -11px;
 }
 .contenu {
   background-color: white;
