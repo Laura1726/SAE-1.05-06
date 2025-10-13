@@ -687,9 +687,9 @@ footer>a:hover{
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 1.1;
-  font-size: 7rem;
+  font-size: 5rem;
   text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  font-family: "Afacad";
+  font-family: "Poppins";
 }
 
 .hero--datacenter-histoire .hero__content-histoire {
@@ -986,59 +986,9 @@ footer>a:hover{
   border-radius: 10px;
 }
 
+.hero__title-env{
 
-.hero-envi {
-  position: relative;
-  min-height: 35vh;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
-
-.hero__img-envi {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -2;
-  transform: scale(1.02);
-}
-
-.hero__content-envi {
-  text-align: center;
-  color: #ffffff;
-  z-index: 1;
-  padding: 0 40px;
-  background: none !important;
-  background-color: transparent !important;
-  backdrop-filter: none !important;
-  box-shadow: none !important;
-  position: relative !important;
-}
-
-.hero__title-envi{
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.1;
-  font-size: 7rem;
-  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  font-family: "Afacad";
-}
-
-.hero--datacenter-envi .hero__content-envi {
-  animation: heroFadeIn-histoire 0.8s ease-out both;
-}
-
-@keyframes heroFadeIn-envi {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-
-
 
 
 
