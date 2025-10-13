@@ -280,6 +280,15 @@ footer>a:hover{
   position: relative !important;
 }
 
+.hero__content.contain {
+    padding: 40px;
+    border-radius: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    animation: slideUp 0.6s ease-out;
+}
 .hero__title {
   margin: 0 0 3rem;
   font-weight: 800;
