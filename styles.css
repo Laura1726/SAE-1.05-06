@@ -272,11 +272,11 @@ footer>a:hover{
   color: #ffffff;
   z-index: 1;
   padding: 0 40px;
-  background: none ;
-  background-color: transparent ;
-  backdrop-filter: none ;
+  background: none !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
   box-shadow: none !important;
-  position: relative;
+  position: relative !important;
 }
 
 .hero__title {
