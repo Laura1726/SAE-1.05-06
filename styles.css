@@ -959,6 +959,8 @@ footer>a:hover{
 }
 
 #haut_page > a:hover{
+  transition: 0.3s;
+  transform: translateY(-5px);
   color: #FFBF00 ;
 }
 
