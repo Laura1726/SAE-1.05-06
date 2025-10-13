@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!-- Icon -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward">
-
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downwardarrow_upward">
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
     <title>Environnement</title>
@@ -42,7 +41,7 @@
 
             <div class="container-milieu">
                 <div class="txt-gauche">
-                    <div class="txt-block">
+                    <div class="txt-block" onmouseenter="showSecondImage()" onmouseleave="hideSecondImage()">
                         <h2 class="titre_partie">Économie circulaire et efficacité énergétique</h2>
                         <p>Les serveurs OVHcloud sont écoconçus, démontables et recyclables. 
                             Chaque composant est testé pour être réutilisé, prolongeant la durée 
@@ -73,9 +72,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="image-block">
-                    <img src="images/schema_pEnv.png" class="img_env" alt="schema de l'efficacite energetique d'ovh cloud">
-                    <img src="images/scope_23.png" class="img_env" alt="image des scpopes de 2023 de ovh">
+                <div class="image-block" id="imageBlock">
+                    <img src="images/Environment_SEO.png" class="img_env" alt="batiment ovhcloud">
+                    <img src="images/schema_pEnv.png" class="img_env hidden-initially" id="secondImage" alt="schema environnement ovh">
+                    <img src="images/graphique_GES.png" class="img_env" alt="batiment ovhcloud">
+
                 </div>
             </div>
 
@@ -91,6 +92,9 @@
                 </p>
             </div>
         </div>
+        <span id="haut_page">
+        <a href=""><span class="material-symbols-outlined">arrow_upward</span> Haut de page</a>
+        </span>
     </main>
 
     <footer>
@@ -111,6 +115,52 @@
       script.src = "menu.js";
       document.body.appendChild(script);
     });
+
+    function showSecondImage() {
+    document.getElementById('imageBlock').classList.add('show-second');
+    }
+
+    function hideSecondImage() {
+        document.getElementById('imageBlock').classList.remove('show-second');
+    }
+
+    document.querySelector('#haut_page a').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const duration = 800;
+    const start = window.pageYOffset;
+    const startTime = performance.now();
+
+    function easeInOutCubic(t) {
+        return t < 0.5 
+            ? 4 * t * t * t 
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    
+
+    function scroll(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easing = easeInOutCubic(progress);
+        
+        window.scrollTo(0, start * (1 - easing));
+        
+        if (progress < 1) {
+            requestAnimationFrame(scroll);
+        }
+    }
+    
+    requestAnimationFrame(scroll);
+});
+
+function showSecondImage() {
+    document.getElementById('imageBlock').classList.add('show-second');
+}
+
+function hideSecondImage() {
+    document.getElementById('imageBlock').classList.remove('show-second');
+}
+
 </script>
 
 </body>
