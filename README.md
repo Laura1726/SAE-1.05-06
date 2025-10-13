@@ -61,7 +61,7 @@ Vérification W3C : [Détail ICI]()
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fenvironnement.html)
 
-![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_page_environnement.png)
+![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_page_environnemnt.png)
 
 
 <img src="doc/EcoConcept_pageEnvironnement.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
