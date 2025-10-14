@@ -1025,6 +1025,8 @@ footer>a:hover{
    text-align: center;
    position: relative;
    overflow: hidden;
+   animation: heroFadeIn-histoire 0.8s ease-out both;
+
 }
 
 .bandeau::before {
