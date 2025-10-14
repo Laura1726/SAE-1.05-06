@@ -29,10 +29,11 @@ Page Accueil :
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Findex.html)
 
-![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAccueil.png)
+![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAcceuil.png)
 
+Vérification WCC : [Détail ICI](https://www.websitecarbon.com/website/laura1726-github-io-sae-1-05-06-index-html/)
 
-<img src="doc/EcoConcept_pageAccueil.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+<img src="doc/WCC_pageAcceuil.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 Page Contact : 
 
@@ -40,8 +41,10 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 ![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageContact.png)
 
+Vérification WCC : [Détail ICI](https://www.websitecarbon.com/website/laura1726-github-io-sae-1-05-06-contact-html/)
 
-<img src="doc/EcoConcept_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+
+<img src="doc/WWC_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 ### Page Histoire
 
@@ -61,7 +64,7 @@ Vérification W3C : [Détail ICI]()
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fenvironnement.html)
 
-![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_page_environnemnt.png)
+![capture d'écran de la conformité de la page Environnement && Innovations](doc/W3C_pageEnvironnement.png)
 
 
 <img src="doc/EcoConcept_pageEnvironnement.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
@@ -83,24 +86,39 @@ Vérification W3C : [Détail ICI]()
 
 ### Planification - Diagramme de GANTT
 
-- Nom Prénom
+- BORNERT Laura
+- HABIBOVIC Danis
+- PADAYODI Kevin
+- FRICHET Lucas
 
 ### Recherches d'informations
 
-- Nom Prénom
-- Nom Prénom
+- FRICHET Lucas
+- BORNERT Laura
+- PADAYODI Kevin
+- HABIBOVIC Danis
 
+### Representation graphique
+
+- FRICHET Lucas
+- PADAYODI Kevin
+- HABIBOVIC Danis
+- BORNERT Laura
 
 ### Développement site
 
-- Nom Prénom
+- HABIBOVIC Danis
   - Page d’accueil
-  - "Template" de page (Navbar/Footer)
-  - Page présentation
-- Nom Prénom
-  - Page histoire
-- Nom Prénom
-  - Page organisation
+  - Page Contact
+  - Nav bar + Footer
+- PADAYODI Kevin
+  - Page Histoire
+- FRICHET Lucas
+  - Page Economie
+- Bornert Laura
+  - Page Environnment && Innovations
+  - Déploiement sur GitLab
+  - Déploiement sur BitBucket
 
 
 ## Contributeurs
