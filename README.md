@@ -70,7 +70,7 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 <img src="doc/EcoConcept_pageEnvironnement.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 
-### Page Economie (Quelques Chiffres)
+### Page Economie
 
 **Auteur : Lucas Frichet** 
 
