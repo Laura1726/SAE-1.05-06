@@ -1056,6 +1056,13 @@ footer>a:hover{
   z-index: 1;
 }
 
+.img_env.graph-size {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  padding: 20px;
+}
+
 
 
 
