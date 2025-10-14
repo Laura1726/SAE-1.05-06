@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!-- Icon -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downwardarrow_upwardrecycling">
 
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
@@ -167,6 +167,10 @@
     </div>
   </main>
 
+  <span id="haut_page">
+            <a href=""><span class="material-symbols-outlined">arrow_upward</span> Haut de page</a>
+        </span>
+
 
     <footer>
     <a href="https://www.ovhcloud.com/fr" target="_blank">www.ovhcloud.com</a>
@@ -175,8 +179,6 @@
         <p>&copy; Page faite par Kevin PADAYODI</p>
     </footer>
     
-        <div id="menu-placeholder"></div>
-
 <script>
   fetch("menu.html")
     .then(res => res.text())
@@ -185,6 +187,9 @@
       const script = document.createElement("script");
       script.src = "menu.js";
       document.body.appendChild(script);
+
+
+      
     });
 </script>
 
