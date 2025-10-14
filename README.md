@@ -55,7 +55,7 @@ Vérification W3C : [Détail ICI]()
 ![capture d'écran de la conformité de la page histoire]()
 
 
-<img src="doc/" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+<img src="doc/WCC_pageHistoire.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 
 ### Page Environnement & Innovations
