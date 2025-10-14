@@ -179,18 +179,63 @@
     </footer>
     
 <script>
-  fetch("menu.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("menu-placeholder").outerHTML = html;
-      const script = document.createElement("script");
-      script.src = "menu.js";
-      document.body.appendChild(script);
+// --- Chargement du menu ---
+fetch("menu.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("menu-placeholder").outerHTML = html;
+    const script = document.createElement("script");
+    script.src = "menu.js";
+    document.body.appendChild(script);
+  });
 
+// --- Gestion de l'image secondaire ---
+function showSecondImage() {
+  document.getElementById('imageBlock').classList.add('show-second');
+}
 
-      
+function hideSecondImage() {
+  document.getElementById('imageBlock').classList.remove('show-second');
+}
+
+// --- Scroll fluide vers le haut ---
+document.addEventListener('DOMContentLoaded', () => {
+  const hautPageLink = document.querySelector('#haut_page a');
+  
+  if (hautPageLink) {
+    hautPageLink.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const duration = 2500; // durée de l’animation (en ms)
+      const start = window.pageYOffset;
+      const startTime = performance.now();
+
+      // Fonction d'accélération/décélération
+      function easeInOutCubic(t) {
+        return t < 0.5 
+          ? 4 * t * t * t 
+          : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      // Animation du scroll
+      function scrollStep(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easing = easeInOutCubic(progress);
+
+        window.scrollTo(0, start * (1 - easing));
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollStep);
+        }
+      }
+
+      requestAnimationFrame(scrollStep);
     });
+  }
+});
 </script>
+
 
 </body>
 </html>
