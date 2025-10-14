@@ -921,6 +921,7 @@ footer>a:hover{
 
 .titre_partie{
   color:#9B65B8;
+  font-family: 'Poppins', sans-serif;
 }
 
 .img_env{
@@ -1063,6 +1064,13 @@ footer>a:hover{
   height: 350px;
   object-fit: contain;
   padding: 20px;
+}
+
+#lien_bilan{
+  color: #FFBF00;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
 }
 
 
