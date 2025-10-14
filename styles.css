@@ -747,7 +747,7 @@ footer>a:hover{
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 1.1;
-  font-size: 70px;
+  font-size: 5rem;
   text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
   font-family: "Poppins", sans-serif;
 }
@@ -766,6 +766,7 @@ footer>a:hover{
 }
 
 .titre_case{
+  font-family: "Poppins", sans-serif;
   text-align: center;
   color:#9B65B8;
 }
@@ -792,18 +793,15 @@ footer>a:hover{
   border: 1px solid #401753;
 }
 
-.chart-container-line {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .choix {
   text-align: right;
 }
+
 .contenu_case_gauche{
   display: flex;
   text-align: justify;
   max-width: 450px;
+  margin-top: 20px;
 }
 
 .contenu-deux {
@@ -816,7 +814,6 @@ footer>a:hover{
   gap: 30px;
   z-index: 1;
 }
-
 
 .case-gauche {
   flex: 1;
@@ -834,7 +831,7 @@ footer>a:hover{
   justify-content: center;
   align-items: center;
   max-width: 450px;
-  margin: 20px auto;
+  margin: 35px auto;
   position: relative;
   z-index: 1;
   left: 50px;
