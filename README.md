@@ -83,24 +83,39 @@ Vérification W3C : [Détail ICI]()
 
 ### Planification - Diagramme de GANTT
 
-- Nom Prénom
+- BORNERT Laura
+- HABIBOVIC Danis
+- PADAYODI Kevin
+- FRICHET Lucas
 
 ### Recherches d'informations
 
-- Nom Prénom
-- Nom Prénom
+- FRICHET Lucas
+- BORNERT Laura
+- PADAYODI Kevin
+- HABIBOVIC Danis
 
+### Representation graphique
+
+- FRICHET Lucas
+- PADAYODI Kevin
+- HABIBOVIC Danis
+- BORNERT Laura
 
 ### Développement site
 
-- Nom Prénom
+- HABIBOVIC Danis
   - Page d’accueil
-  - "Template" de page (Navbar/Footer)
-  - Page présentation
-- Nom Prénom
-  - Page histoire
-- Nom Prénom
-  - Page organisation
+  - Page Contact
+  - Nav bar + Footer
+- PADAYODI Kevin
+  - Page Histoire
+- FRICHET Lucas
+  - Page Economie
+- Bornert Laura
+  - Page Environnment && Innovations
+  - Déploiement sur GitLab
+  - Déploiement sur BitBucket
 
 
 ## Contributeurs
