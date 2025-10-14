@@ -29,14 +29,11 @@ Page Accueil :
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Findex.html)
 
-![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAccueil.png)
+![capture d'écran de la conformité de la page d'accueil](doc/W3C_pageAcceuil.png)
 
 Vérification WCC : [Détail ICI](https://www.websitecarbon.com/website/laura1726-github-io-sae-1-05-06-index-html/)
 
-![capture d'écran de la conformité de la page d'accueil](doc/WCC_pageAcceuil.png)
-
-
-<img src="doc/WCC_pageAccueil.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+<img src="doc/WCC_pageAcceuil.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 Page Contact : 
 
@@ -46,10 +43,8 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 
 Vérification WCC : [Détail ICI](https://www.websitecarbon.com/website/laura1726-github-io-sae-1-05-06-contact-html/)
 
-![capture d'écran de la conformité de la page d'accueil](doc/WCC_pageContact.png)
 
-
-<img src="doc/WCC_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+<img src="doc/WWC_pageContact.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 ### Page Histoire
 
