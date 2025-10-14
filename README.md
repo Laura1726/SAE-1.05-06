@@ -79,7 +79,7 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 ![capture d'écran de la conformité de la page Economie](doc/W3C_pageEconomie.png)
 
 
-<img src="doc/" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
+<img src="doc/EcoIndex_pageEconomie.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
 
 
 ## Répartition du travail
