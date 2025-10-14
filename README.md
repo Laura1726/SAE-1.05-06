@@ -110,13 +110,15 @@ Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2
 - HABIBOVIC Danis
   - Page d’accueil
   - Page Contact
-  - Nav bar + Footer
+  - Menu burger
 - PADAYODI Kevin
   - Page Histoire
 - FRICHET Lucas
   - Page Economie
+  - Footer
 - Bornert Laura
   - Page Environnment & Innovations
+  - Nav bar (logo NOVA)
   - Déploiement sur GitLab
   - Déploiement sur BitBucket
 
