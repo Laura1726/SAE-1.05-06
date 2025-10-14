@@ -179,8 +179,7 @@
     </footer>
     
 <script>
-
-fetch("menu.html")
+  fetch("menu.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("menu-placeholder").outerHTML = html;
@@ -189,47 +188,43 @@ fetch("menu.html")
       document.body.appendChild(script);
     });
 
-function showSecondImage() {
-  document.getElementById('imageBlock').classList.add('show-second');
-}
+    function showSecondImage() {
+    document.getElementById('imageBlock').classList.add('show-second');
+    }
 
-function hideSecondImage() {
-  document.getElementById('imageBlock').classList.remove('show-second');
-}
+    function hideSecondImage() {
+        document.getElementById('imageBlock').classList.remove('show-second');
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hautPageLink = document.querySelector('#haut_page a');
-  
-  if (hautPageLink) {
-    hautPageLink.addEventListener('click', function(e) {
-      e.preventDefault();
+    document.querySelector('#haut_page a').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const duration = 800;
+    const start = window.pageYOffset;
+    const startTime = performance.now();
 
-      const duration = 2500;
-      const start = window.pageYOffset;
-      const startTime = performance.now();
-
-      function easeInOutCubic(t) {
+    function easeInOutCubic(t) {
         return t < 0.5 
-          ? 4 * t * t * t 
-          : 1 - Math.pow(-2 * t + 2, 3) / 2;
-      }
+            ? 4 * t * t * t 
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    
 
-      function scrollStep(currentTime) {
+    function scroll(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
         const easing = easeInOutCubic(progress);
-
+        
         window.scrollTo(0, start * (1 - easing));
-
+        
         if (progress < 1) {
-          requestAnimationFrame(scrollStep);
+            requestAnimationFrame(scroll);
         }
-      }
-
-      requestAnimationFrame(scrollStep);
-    });
-  }
+    }
+    
+    requestAnimationFrame(scroll);
 });
+
 </script>
 
 
