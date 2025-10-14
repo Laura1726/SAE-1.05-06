@@ -58,7 +58,7 @@
         </div>
       </div>
     
-    <h1 class="titre-histoire">Frise Chronologique d’OVHcloud</h1>
+    <h2 class="titre-histoire">Frise Chronologique d’OVHcloud</h2>
 
     <div class="frise">
 
@@ -181,13 +181,13 @@
 <script>
 
 fetch("menu.html")
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById("menu-placeholder").outerHTML = html;
-    const script = document.createElement("script");
-    script.src = "menu.js";
-    document.body.appendChild(script);
-  });
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("menu-placeholder").outerHTML = html;
+      const script = document.createElement("script");
+      script.src = "menu.js";
+      document.body.appendChild(script);
+    });
 
 function showSecondImage() {
   document.getElementById('imageBlock').classList.add('show-second');
