@@ -50,9 +50,9 @@ Vérification WCC : [Détail ICI](https://www.websitecarbon.com/website/laura172
 
 **Auteur : Kevin PADAYODI**  
 
-Vérification W3C : [Détail ICI]()
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Flaura1726.github.io%2FSAE-1.05-06%2Fhistoire.html)
 
-![capture d'écran de la conformité de la page histoire]()
+![capture d'écran de la conformité de la page histoire](doc/W3C_pageHistoire.png)
 
 
 <img src="doc/WCC_pageHistoire.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'eco-conception">
