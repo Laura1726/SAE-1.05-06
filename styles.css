@@ -986,10 +986,51 @@ footer>a:hover{
   border-radius: 10px;
 }
 
-.hero__title-env{
-
+.bandeau{
+   background: linear-gradient(135deg, 
+     #1f1236 0%, 
+     #2d1a4a 15%, 
+     #401753 35%, 
+     #542270 55%, 
+     #6b2d8a 75%, 
+     #7d3a9e 90%, 
+     #8e47b0 100%);
+   width: 100%;
+   padding: 60px 20px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+   text-align: center;
+   position: relative;
+   overflow: hidden;
 }
 
+.bandeau::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: radial-gradient(circle at 30% 50%, rgba(255, 191, 0, 0.1) 0%, transparent 50%),
+               radial-gradient(circle at 70% 50%, rgba(155, 101, 184, 0.15) 0%, transparent 50%);
+   pointer-events: none;
+}
+
+
+.titre_page{
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  font-size: 70px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 
+               0 8px 30px rgba(255, 191, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
 
 
 
