@@ -158,9 +158,6 @@ body{
   pointer-events: auto;
 }
 
-@media (max-width: 420px) {
-  :root { --menu-w: 86vw; }
-}
 
   
 header{
@@ -239,6 +236,14 @@ footer>a:hover{
   display: grid;
   place-items: center;
   padding: 0;
+    background: linear-gradient(135deg, 
+     #1f1236 0%, 
+     #2d1a4a 15%, 
+     #401753 35%, 
+     #542270 55%, 
+     #6b2d8a 75%, 
+     #7d3a9e 90%, 
+     #8e47b0 100%);
 }
 
 .hero__img {
@@ -685,6 +690,14 @@ footer>a:hover{
   place-items: center;
   overflow: hidden;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(135deg, 
+     #1f1236 0%, 
+     #2d1a4a 15%, 
+     #401753 35%, 
+     #542270 55%, 
+     #6b2d8a 75%, 
+     #7d3a9e 90%, 
+     #8e47b0 100%);
 }
 
 .hero__img-histoire {
