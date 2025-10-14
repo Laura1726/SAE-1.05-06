@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
     <!-- Icon -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downwardarrow_upward">
     <!-- css -->
@@ -25,11 +24,9 @@
             </a>
         </nav>
     </header>
-
     <div class="bandeau">
         <h1 class="titre_page">Les chiffres importants d'OVHcloud</h1>
     </div>
-
     <main class="eco">
         <div class="case"> 
             <div class="eco_accroche">
@@ -58,7 +55,6 @@
                 <canvas id="cloudMarketShare"></canvas>
             </div>
         </div>
-
         <div class="case">
             <h2 class="titre_case">Les années fiscales d'OVHcloud</h2>
             <div class="contenu_case">
@@ -69,7 +65,6 @@
                 Nous allons donc parler des chiffres d'OVHcloud pour <span class="jaune">les années fiscales 2020 à 2024</span>, soit 5 années d'évolution.
             </div>
         </div>
-
         <div class="case">
             <h2 class="titre_case">Coût de l'endettement financier net</h2> 
             <div class="contenu_case">
@@ -88,7 +83,6 @@
                 </div>
             </div>
         </div>
-
         <div class="case">
             <h2 class="titre_case">Résultat net d'OVHcloud</h2> 
             <div class="contenu_case">
@@ -112,7 +106,6 @@
                 </div>
             </div>
         </div>
-
         <div class="case">
             <h2 class="titre_case">Évolution du chiffre d'affaires</h2> 
             <div class="contenu_case">
@@ -130,7 +123,6 @@
                 </div>
             </div>
         </div>
-
         <div class="case">
             <h2 class="titre_case">Résultat opérationnel d'OVHcloud avec le C.A.</h2>
             <div class="contenu_case">
@@ -159,7 +151,6 @@
         <br>
         <p>&copy; Page faite par Lucas FRICHET</p>
     </footer>
-
     <div id="menu-placeholder"></div>
 
      <script>
@@ -171,7 +162,6 @@
             script.src = "menu.js";
             document.body.appendChild(script);
         });
-
         const ctx = document.getElementById('financeChart').getContext('2d');
         const financeChart = new Chart(ctx, {
         type: 'line',
@@ -216,7 +206,6 @@
             }
         }
     });
-
     const ctx2 = document.getElementById('cloudMarketShare').getContext('2d');
     const data = {
         labels: ['AWS ', 'Microsoft Azure ', 'Google Cloud ', 'OVHcloud ', 'Autres (Oracle, IBM, Alibaba, ...) '],
@@ -232,7 +221,6 @@
             hoverOffset: 10
         }]
     };
-
     const config1 = {
         type: 'pie',
         data: data,
@@ -249,13 +237,10 @@
             }
         }
     };
-
     new Chart(ctx2, config1);
-
     const ctx3 = document.getElementById('resultatNetChart').getContext('2d');
     const labels3 = ['2020', '2021', '2022', '2023', '2024'];
     const values3 = [-11306, -32344, -28554, -40320, -10297];
-
     function getDataset(type) {
         if (type === 'line') {
             return [{
@@ -278,53 +263,49 @@
             }];
         }
     }
-
     let chartType = 'bar';
-    let chart = new Chart(ctx3, {
+    let chart = new Chart(ctx3,{
         type: chartType,
-        data: { labels: labels3, datasets: getDataset(chartType) },
-        options: {
-            scales: {
-                y: {
+        data: {labels: labels3, datasets: getDataset(chartType)},
+        options:{
+            scales:{
+                y:{
                     beginAtZero: true,
-                    title: { display: true, text: 'En milliers d’euros' }
+                    title: {display: true, text: 'En milliers d’euros'}
                 },
-                x: {
-                    title: { display: true, text: 'Année' }
+                x:{
+                    title: {display: true, text: 'Année'}
                 }
             }
         }
     });
-
-    document.getElementById('chartType').addEventListener('change', function() {
+    document.getElementById('chartType').addEventListener('change', function(){
         const newType = this.value;
         chart.destroy();
-        chart = new Chart(ctx3, {
+        chart = new Chart(ctx3,{
             type: newType,
-            data: { labels: labels3, datasets: getDataset(newType) },
-            options: {
-                scales: {
-                    y: {
+            data:{labels: labels3, datasets: getDataset(newType)},
+            options:{
+                scales:{
+                    y:{
                         beginAtZero: true,
-                        title: { display: true, text: 'En milliers d’euros' }
+                        title: {display: true, text: 'En milliers d’euros'}
                     },
-                    x: {
-                        title: { display: true, text: 'Année' }
+                    x:{
+                        title: {display: true, text: 'Année'}
                     }
                 }
             }
         });
     });
-
     const ctx4 = document.getElementById('caChart').getContext('2d');
     const labels4 = ['2020', '2021', '2022', '2023', '2024'];
     const values4 = [632116, 663312, 787998, 897299, 993053];
-
-    new Chart(ctx4, {
+    new Chart(ctx4,{
         type: 'line',
-        data: {
+        data:{
             labels: labels4,
-            datasets: [{
+            datasets:[{
                 label: "Chiffre d'affaires (en milliers d’euros)",
                 data: values4,
                 borderColor: '#743894',
@@ -335,17 +316,17 @@
                 pointBackgroundColor: '#9B65B8',
             }]
         },
-        options: {
-            scales: {
-                y: {
+        options:{
+            scales:{
+                y:{
                     beginAtZero: false,
-                    title: {
+                    title:{
                         display: true,
                         text: "En milliers d’euros"
                     }
                 },
-                x: {
-                    title: {
+                x:{
+                    title:{
                         display: true,
                         text: "Année"
                     }
@@ -353,7 +334,6 @@
             }
         }
     });
-
     const ctx5 = document.getElementById('ovhChart').getContext('2d');
     const data5 = {
         labels: ['2020', '2021', '2022', '2023', '2024'],
@@ -376,73 +356,63 @@
             fill: false
         }]
     };
-
     const config = {
         type: 'bar',
         data: data5,
-        options: {
+        options:{
             responsive: true,
-            animation: {
+            animation:{
             duration: 1000,
             easing: 'easeInOutQuart'
             },
-            scales: {
-                y: {
+            scales:{
+                y:{
                     beginAtZero: false,
-                    title: {
+                    title:{
                         display: true,
                         text: 'En milliers d’euros'
                     }
                 },
-                x: {
-                    title: {
+                x:{
+                    title:{
                         display: true,
                         text: 'Année'
                     }
                 }
             },
-            plugins: {
-                legend: { position: 'bottom' },
-                title: {
+            plugins:{
+                legend:{position: 'bottom'},
+                title:{
                     display: true,
                 },
-                tooltip: {
+                tooltip:{
                     mode: 'index',
                     intersect: false
                 }
             }
         }
     };
-
-    document.querySelector('#haut_page a').addEventListener('click', function(e) {
+    document.querySelector('#haut_page a').addEventListener('click', function(e){
         e.preventDefault();
-    
         const duration = 800;
         const start = window.pageYOffset;
         const startTime = performance.now();
-
-        function easeInOutCubic(t) {
-            return t < 0.5 
-                ? 4 * t * t * t 
+        function easeInOutCubic(t){ 
+            return t < 0.5
+                ? 4 * t * t * t
                 : 1 - Math.pow(-2 * t + 2, 3) / 2;
         }
-    
-
         function scroll(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const easing = easeInOutCubic(progress);
-        
             window.scrollTo(0, start * (1 - easing));
-        
             if (progress < 1) {
                 requestAnimationFrame(scroll);
             }
         }
-    
         requestAnimationFrame(scroll);
     });
-
     new Chart(ctx5, config);
     </script>
 </body>
